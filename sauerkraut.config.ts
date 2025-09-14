@@ -16,11 +16,11 @@ export function createContent(config: Config, layoutData: LayoutData) {
 
 export async function createHtml(config: Config, head: Head, layoutData: LayoutData) {
 	return html`<!doctype html>
-		<html>
+		<html lang="en">
 			<head>
-				<meta charset="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<meta name="referrer" content="same-origin" />
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="referrer" content="same-origin">
 				<link rel="stylesheet" href="./static/style.css"></link>
 				<title>${layoutData.title}</title>
 				${await config.createHead(config, layoutData)}
