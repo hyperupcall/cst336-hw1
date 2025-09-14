@@ -1,0 +1,112 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ranade-Bold';
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+mark {
+	background-color:gold;
+}
+
+:root {
+	line-height: 170%;
+	--lightcolor: lavender;
+}
+
+hr {
+	position: relative;
+	border: 1px solid rebeccapurple;
+	box-shadow: 10px 10px 5px -5px rgba(174,174,174,0.75);
+}
+
+div[popover] {
+	padding: 20px;
+}
+button {
+	box-shadow: 3px 3px 5px -5px rgba(174,174,174,0.75);
+	background-color: var(--lightcolor);
+	border: 1px solid rebeccapurple;
+	border-radius: 3px;
+	padding: 3px 6px;
+	font-size: 14px;
+	transition: transform 50ms ease-in-out;
+}
+summary::after {
+	content: '(Click to expand)';
+	font-style: italic;
+}
+
+button:hover {
+	transition: transform 50ms ease-in-out;
+	transform: scale(1.1);
+	cursor: hover;
+	background-color:var(--lightcolor);
+}
+figure {
+	margin: 0;
+}
+button:active {
+	transform: scale(1.0);
+}
+
+body {
+	background-color: lavenderblush;
+}
+
+img {
+	width: 100%;
+}
+
+.pumpitup {
+	width: 500px;
+}
+main {
+	max-width: 800px;
+	margin-inline: 20px;
+}
+
+a {
+	color:darkblue;
+}
+a:visited {
+	color:brown;
+}
+
+nav > ul {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 8px;
+	padding-inline-start: 0;
+	font-family: 'Ranade-Bold';
+
+	& li {
+		list-style-type: none;
+	}
+
+	& a {
+		padding: 6px 8px;
+		border: 2px solid rebeccapurple;
+		text-decoration: none;
+		box-shadow: 3px 3px 5px -5px rgba(174,174,174,0.75);
+		border-radius: 4px;
+
+		&:hover {
+			background: var(--lightcolor);
+		}
+	}
+}
+
+body {
+	font-family: 'Satoshi-Medium';
+}
+
+.tux {
+	width: 200px;
+}
+
+.tux:hover {
+	transform: rotateY('2rot');
+}
