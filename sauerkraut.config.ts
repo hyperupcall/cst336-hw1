@@ -21,7 +21,7 @@ export async function createHtml(config: Config, head: Head, layoutData: LayoutD
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<meta name="referrer" content="same-origin" />
-				<link rel="stylesheet" href="/static/style.css"></link>
+				<link rel="stylesheet" href="./static/style.css"></link>
 				<title>${layoutData.title}</title>
 				${await config.createHead(config, layoutData)}
 			</head>
