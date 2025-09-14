@@ -1,0 +1,117 @@
+<h1>Distributions</h1>
+
+<p>
+	Linux is just a kernel. It is software that creates an environment for other programs to
+	make computations and interact with software. If only Linux were installed on a personal
+	computer, developers wouldn't be able to do much. It would be like giving a graphic
+	designer a computer without any graphics processing software, or giving a music producer
+	a computer without any music producing applications. Unlike graphic designers and music
+	producers, developers need a set of command-line utilities that allow them to understand
+	what Linux is doing and create scripts for automating tasks.
+</p>
+
+<h2>Basic Command-line Utilities</h2>
+
+<p>
+	One project that contains many of these command-line utilities is GNU Core Utilities. It
+	implements many familier command-line utilities, like <code>mv</code>, <code>ls</code>,
+	<code>rm</code>, and <code>mkdir</code>. These command-line tools are used to create,
+	modify, and delete files, modify how data is formatted, and provide
+	&ldquo;functions&rdquo; for use in shell scripts.
+</p>
+
+<p>
+	GNU Core Utilities provides half of the picture. But there needs to be tools that show
+	information about Linux or that use Linux to perform basic hardware tasks. That's where
+	<a href="https://www.kernel.org/pub/linux/utils/util-linux/">util-linux</a> comes into
+	play. It provides utilities such as <code>mkfs</code>, <code>blkid</code>, and
+	<code>dmesg</code> that allow users to format disks, list disk information, and show the
+	kernel ring buffer. Another popular project,
+	<a href="https://gitlab.com/procps-ng/procps">procps</a> provides utilities for manaing
+	processes, such as <code>ps</code>, <code>pkill</code>, and <code>top</code>, among
+	other functionality.
+</p>
+
+<h2>Linux Distributors</h2>
+
+<p>
+	It is the job of developers of Linux distributions to find and incorporate these
+	utilities with Linux in a way that is usable by the end consumer. Linux distribution
+	usually also include:
+</p>
+
+<ol>
+	<li>A graphical environment</li>
+	<li>A package manager, to install and uninstall software</li>
+	<li>
+		Necessary GUI apps that include a file manager, settings app, system monitor, software
+		updators, video players, and more
+	</li>
+	<li>
+		Popular applications like Mozilla Firefox, LibreOffice,, pre-installed for convenience
+	</li>
+	<li>
+		A file, known as a disk image or ISO, that is written to a USB Drive to make the
+		installation easier
+	</li>
+</ol>
+<h2>Popular Linux Distributions</h2>
+
+<p>
+	The most popular Linux distribution is <a href="https://ubuntu.com/">Ubuntu</a>, which
+	is managed by the company <a href="https://canonical.com/">Canonical</a>. There are
+	multiple versions of Ubuntu:
+</p>
+
+<ol>
+	<li>Ubuntu Desktop</li>
+	<li>Ubuntu Server</li>
+	<li>Ubuntu Cloud</li>
+</ol>
+
+<p>
+	Each version of Ubuntu is optimized for its use. For example, Ubuntu Desktop is the only
+	one to include graphical software out of the box; neither Ubuntu Server nor Ubuntu Cloud
+	do so. And, with Ubuntu Cloud, it does not build device drivers into the Linux kernel
+	that are not used in a cloud environment, such as drivers for physical keyboards.
+</p>
+
+<p>Of course, there are many other Linux distributions; some include:</p>
+
+<ul>
+	<li>Slackware</li>
+	<li>Debian</li>
+	<li>Pop! OS</li>
+	<li>Fedora</li>
+	<li>Arch Linux</li>
+	<li>Gentoo</li>
+</ul>
+
+<p>
+	Slackware is the oldest Linux distribution that is currently maintained. It is less
+	frequently updated and rarely used by developers. Debian is also one of the oldest
+	distributions. It has a less frequent update cadence as well, but it is one of the, if
+	not the, most widely used Linux distribution. People choose it because it is stable and
+	minimal. Pop! OS is similar to Ubuntu, but adds several features that simplify
+	installation for consumers. The graphical installer is easier to navigate, and it makes
+	it easier to install Linux to computers with NVIDIA GPUs (this is less of an issue now).
+	Fedora is also widely used; it is known for being ahead of the pack in incorporating new
+	technologies, whether that is systemd as a PID 1 process, PipeWire for audio handling,
+	or Wayland as a display manager. Sometimes the frequent releases and early changes to
+	new software introduce bugs. Lastly, Arch Linux and Gentoo are more minimal Linux
+	distributions that are geared towards advanced users that have free time.
+</p>
+
+<figure>
+	<picture>
+		<source srcset="/static/arch-linux.png" width="800px" />
+		<img src="/static/arch-linux.png" alt="Arch linux logo" />
+	</picture>
+
+	<figcaption>
+		<a href="https://commons.wikimedia.org/wiki/File:Archlinux-logo-standard-version.svg"
+			>Judd Vinet, Aaron Griffin and Levente Polyák, GPL
+			&lt;http://www.gnu.org/licenses/gpl.html&gt;, via Wikimedia Commons</a
+		>
+	</figcaption>
+</figure>
