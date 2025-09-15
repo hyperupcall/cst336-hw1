@@ -31,6 +31,17 @@ export async function createHtml(config: Config, head: Head, layoutData: LayoutD
 				<main>
 					${await config.createContent(config, layoutData)}
 				</main>
+				<footer>
+					<hr>
+					<p>
+						This is my homework 1 web page for
+						<a href="https://catalog.csumb.edu/preview_course_nopop.php?catoid=1&coid=437"
+							>CST 336</a
+						>
+						at
+						<a href="https://csumb.edu/">California State University, Monterey Bay</a>. The design and content of this page was designed with the grading rubric in mind. View <a href="https://github.com/hyperupcall/cst336-hw1">source code</a>.
+					</p>
+				</footer>
 			</body>
 		</html>`
 }

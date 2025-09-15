@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ranade-Bold';
 }
 
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -55,14 +56,14 @@ body {
 	background-color: lavenderblush;
 }
 
-img {
-	width: 100%;
+img, video {
+	max-width: 100%;
 }
 
 .pumpitup {
 	width: 500px;
 }
-main {
+main,footer {
 	max-width: 800px;
 	margin-inline: 20px;
 }
@@ -75,15 +76,18 @@ a:visited {
 }
 
 nav > ul {
+	flex-wrap: wrap;
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	gap: 8px;
 	padding-inline-start: 0;
+	margin-block-end: 12px;
 	font-family: 'Ranade-Bold';
 
 	& li {
 		list-style-type: none;
+		margin-block-end: 8px;
 	}
 
 	& a {
